@@ -14,6 +14,7 @@
 		571FED451C3E0EAD00D6682B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 571FED431C3E0EAD00D6682B /* LaunchScreen.storyboard */; };
 		571FED501C3E0EAD00D6682B /* tipslashTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571FED4F1C3E0EAD00D6682B /* tipslashTests.swift */; };
 		571FED5B1C3E0EAD00D6682B /* tipslashUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571FED5A1C3E0EAD00D6682B /* tipslashUITests.swift */; };
+		5783473A1C47099500BFF079 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578347391C47099500BFF079 /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,8 @@
 		571FED561C3E0EAD00D6682B /* tipslashUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tipslashUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		571FED5A1C3E0EAD00D6682B /* tipslashUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tipslashUITests.swift; sourceTree = "<group>"; };
 		571FED5C1C3E0EAD00D6682B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		578347321C47044200BFF079 /* tipslash-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "tipslash-Bridging-Header.h"; sourceTree = "<group>"; };
+		578347391C47099500BFF079 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +106,8 @@
 				571FED411C3E0EAD00D6682B /* Assets.xcassets */,
 				571FED431C3E0EAD00D6682B /* LaunchScreen.storyboard */,
 				571FED461C3E0EAD00D6682B /* Info.plist */,
+				578347321C47044200BFF079 /* tipslash-Bridging-Header.h */,
+				578347391C47099500BFF079 /* SettingsViewController.swift */,
 			);
 			path = tipslash;
 			sourceTree = "<group>";
@@ -258,6 +263,7 @@
 			files = (
 				571FED3D1C3E0EAD00D6682B /* ViewController.swift in Sources */,
 				571FED3B1C3E0EAD00D6682B /* AppDelegate.swift in Sources */,
+				5783473A1C47099500BFF079 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,10 +403,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = tipslash/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = bb.tipslash;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "tipslash/tipslash-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -408,10 +418,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = tipslash/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = bb.tipslash;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "tipslash/tipslash-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -482,6 +495,7 @@
 				571FED611C3E0EAD00D6682B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		571FED621C3E0EAD00D6682B /* Build configuration list for PBXNativeTarget "tipslashTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +504,7 @@
 				571FED641C3E0EAD00D6682B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		571FED651C3E0EAD00D6682B /* Build configuration list for PBXNativeTarget "tipslashUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +513,7 @@
 				571FED671C3E0EAD00D6682B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
